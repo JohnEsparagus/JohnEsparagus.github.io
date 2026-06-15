@@ -1,0 +1,10 @@
+<footer class="footer">
+  <div class="container">
+    <span>© {{ 'now' | date: "%Y" }} {{ site.author.name }}</span>
+    <div class="footer-links">
+      <a href="https://github.com/{{ site.author.github }}" target="_blank" rel="noopener">GitHub</a>
+      {% if site.author.twitter %}<a href="https://twitter.com/{{ site.author.twitter }}" target="_blank" rel="noopener">Twitter</a>{% endif %}
+      {% if site.author.email %}<a href="mailto:{{ site.author.email }}">Email</a>{% endif %}
+    </div>
+  </div>
+</footer>

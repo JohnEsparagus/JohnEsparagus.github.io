@@ -1,0 +1,28 @@
+title: "Your Name"
+description: "Graphics Programmer / WebGPU Developer"
+url: "https://your-username.github.io"
+baseurl: ""
+
+author:
+  name: Your Name
+  email: you@example.com
+  github: your-username
+  twitter: your-handle
+
+# Build settings
+markdown: kramdown
+theme: null
+plugins:
+  - jekyll-seo-tag
+
+collections:
+  projects:
+    output: true
+    permalink: /projects/:name/
+
+defaults:
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "project"
