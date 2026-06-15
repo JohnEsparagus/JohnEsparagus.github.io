@@ -2,7 +2,7 @@
 title: "WebGPU Particle System"
 description: "Real-time particle simulation using compute shaders. 100k+ particles with gravity, orbital forces, and dynamic coloring — runs entirely in the browser."
 tags: [WebGPU, WGSL, TypeScript]
-demo: "projects/webgpu-particles/"
+demo: "https://gpu-sparkles-nine.vercel.app/"
 github: "https://github.com/your-username/your-repo/tree/main/projects/webgpu-particles"
 order: 1
 ---
