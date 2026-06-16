@@ -1,12 +1,12 @@
-title: "Your Name"
-description: "Graphics Programmer / WebGPU Developer"
-url: "https://your-username.github.io"
-baseurl: ""
+title: "Amir Rasul"
+description: "Aspiring Graphics Dev and Software Engineer"
+url: "https://johnesparagus.github.io/"
+baseurl: "https://johnesparagus.github.io/"
 
 author:
-  name: Your Name
-  email: you@example.com
-  github: your-username
+  name: Amir Rasul
+  email: Rasul_Amir@outlook.com
+  github: JohnEsparagus
   twitter: your-handle
 
 # Build settings
