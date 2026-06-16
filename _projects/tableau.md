@@ -6,7 +6,7 @@ tags: [Python, Logic, Tableau Solver]
 demo: ""
 github: "https://github.com/JohnEsparagus/tableau-solver"
 order: 3
---------
+---
 
 ## Overview
 
