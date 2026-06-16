@@ -5,7 +5,7 @@ description: "A tool that checks whether propositional and first-order logic for
 tags: [Python, Logic, Tableau Solver]
 demo: ""
 github: "https://github.com/JohnEsparagus/tableau-solver"
-order: 2
+order: 3
 --------
 
 ## Overview
