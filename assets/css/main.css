@@ -539,6 +539,10 @@ a { color: inherit; text-decoration: none; }
   .projects-grid { grid-template-columns: 1fr; }
   .nav-links { display: none; }
   .hero-title { font-size: 36px; }
+  .hero-inner { flex-direction: column-reverse; text-align: center; gap: 32px; }
+  .hero-portrait { width: 140px; height: 140px; }
+  .hero-sub { max-width: none; }
+  .hero-cta { justify-content: center; }
 }
 
 @media (prefers-reduced-motion: reduce) {
