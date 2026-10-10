@@ -1,0 +1,71 @@
+body {
+  max-width: 640px;
+  margin: 60px auto;
+  padding: 0 20px;
+  font-family: "Courier New", monospace;
+  color: #222;
+  background: #fdfdfb;
+  line-height: 1.5;
+}
+
+.about-link {
+  float: right;
+  font-size: 0.9em;
+  color: #666;
+  text-decoration: none;
+}
+
+.about-link:hover {
+  text-decoration: underline;
+}
+
+.avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 1.4em;
+  margin-bottom: 4px;
+}
+
+.tagline {
+  color: #666;
+  margin-top: 0;
+}
+
+h2 {
+  font-size: 1.05em;
+  margin-top: 2em;
+  margin-bottom: 0.4em;
+}
+
+p {
+  margin: 0.4em 0;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #ddd;
+  margin: 2em 0;
+}
+
+.footer {
+  color: #999;
+  font-size: 0.9em;
+}
+
+a {
+  color: #222;
+}
+
+.post {
+  display: block;
+  max-width: 100%;
+  margin: 0.8em 0;
+  border: 1px solid #ddd;
+}

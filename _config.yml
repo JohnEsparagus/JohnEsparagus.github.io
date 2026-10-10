@@ -1,28 +1,3 @@
-title: "Amir Rasul"
-description: "Aspiring Graphics Dev and Software Engineer"
-url: "https://johnesparagus.github.io/"
-baseurl: ""
-
-author:
-  name: Amir Rasul
-  email: Rasul_Amir@outlook.com
-  github: JohnEsparagus
-  twitter: your-handle
-
-# Build settings
+title: Your Name
+description: projects
 markdown: kramdown
-theme: null
-plugins:
-  - jekyll-seo-tag
-
-collections:
-  projects:
-    output: true
-    permalink: /projects/:name/
-
-defaults:
-  - scope:
-      path: ""
-      type: "projects"
-    values:
-      layout: "project"
