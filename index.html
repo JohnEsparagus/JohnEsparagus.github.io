@@ -3,69 +3,105 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Your Name</title>
+<title>Amir Rasul</title>
+<meta name="description" content="Amir Rasul — Computer Science student at UCL. Search engines, graphics and systems projects built from scratch.">
+<meta property="og:title" content="Amir Rasul">
+<meta property="og:description" content="Amir Rasul — Computer Science student at UCL. Search engines, graphics and systems projects built from scratch.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://johnesparagus.github.io/">
+<meta property="og:image" content="https://johnesparagus.github.io/me.jpg">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<a href="about.html" class="about-link">about</a>
+<header class="intro">
+  <img src="me.jpg" alt="Amir Rasul" class="avatar" width="88" height="88">
+  <div>
+    <h1>Amir Rasul</h1>
+    <p class="tagline">i build things to understand how they work</p>
+    <nav class="links">
+      <a href="about.html">about</a>
+      <a href="https://github.com/JohnEsparagus">github</a>
+      <a href="https://www.linkedin.com/in/amir-rasul-493b10216">linkedin</a>
+      <a href="mailto:Rasul_Amir@outlook.com">email</a>
+    </nav>
+  </div>
+</header>
 
-<img src="me.jpg" alt="me" class="avatar">
+<section class="mission">
+  <h2>Mission</h2>
+  <p>Dedicate my career to removing language barriers through AI and software engineering.</p>
+</section>
 
-<h1>Your Name</h1>
-<p class="tagline">i build things to understand how they work</p>
+<main>
+<p class="section-label">Projects</p>
 
-<hr>
+<article class="project">
+  <h2><a href="https://github.com/JohnEsparagus/Native-BM25-Multilingual-search-engine">Cross-lingual hybrid search engine</a></h2>
+  <ul class="tags"><li>C++20</li><li>Python</li><li>BM25 + dense</li></ul>
+  <p>Built a search engine from scratch in C++ — inverted index, BM25 ranking, the actual math search engines use to decide relevance. Works across English, Chinese and Arabic, each with its own tokeniser.</p>
+  <p>It's now hybrid: BM25 for exact keyword matches, dense embeddings for meaning, and the two rankings fused together. The dense side is what makes it cross-lingual — you can search every book with one query in any language, which BM25 alone can't do since it needs the query and the text to share words.</p>
+  <p>Wanted to actually understand how "search" works under the hood instead of just using Elasticsearch and moving on.</p>
+</article>
 
-<h2>Mission</h2>
-<p>Dedicate my career to removing language barriers through AI and software engineering.</p>
+<article class="project">
+  <h2><a href="https://github.com/JohnEsparagus/C-Shell">C Shell</a></h2>
+  <ul class="tags"><li>C</li><li>Linux</li></ul>
+  <p>Wrote a basic shell in C. Parsing commands, handling pipes, forking processes, all the stuff your terminal does without you thinking about it. It runs a claude code agent that helps create, delete, edit and run commands.</p>
+  <p>Nothing revolutionary, but genuinely one of the best ways to actually understand how an OS talks to processes instead of just reading about it.</p>
+  <iframe class="post" src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7489402901094776832?collapsed=1" height="550" width="504" frameborder="0" allowfullscreen="" title="C Shell — LinkedIn post" loading="lazy"></iframe>
+</article>
 
-<hr>
+<article class="project">
+  <h2><a href="https://students.cs.ucl.ac.uk/2024/group14/index.html">NaviGo</a></h2>
+  <ul class="tags"><li>FastAPI</li><li>Spatial database</li><li>UCL</li></ul>
+  <p>Over the past year, I've had the opportunity to work on NaviGo, a university research project focused on improving accessibility through geospatial data and interactive mapping.</p>
+  <p>One of the most rewarding parts of the project was learning how a real software system comes together. We designed a full-stack application with a FastAPI backend, a reusable frontend widget, and a spatial database capable of storing and querying accessibility information efficiently. Working with concepts such as REST APIs, database design, spatial data modelling, and layered software architecture gave me experience that went far beyond coursework.</p>
+  <p>What I'll remember most, though, is the team. Working alongside talented teammates challenged me to think differently, ask better questions, and appreciate the value of clean engineering practices and collaboration. Seeing how different people approached problems — from backend architecture to frontend design — was a huge learning experience.</p>
+  <p>Looking back, I'm proud of what we built and grateful for everyone who contributed. It's exciting to see how much I've learned since the beginning of the project, and it has given me an even greater appreciation for building software that can have a real impact on people's lives.</p>
+  <p>A big thank you to my teammates, our supervisors, and everyone who supported us throughout the project. I'm looking forward to applying these lessons to future projects and continuing to grow as a software engineer.</p>
+</article>
 
-<h2><a href="https://github.com/JohnEsparagus/Native-BM25-Multilingual-search-engine">Cross-lingual hybrid search engine</a></h2>
-<!-- TODO linkedin post: <iframe class="post" src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:POST_ID?collapsed=1" height="550" width="504" frameborder="0" allowfullscreen="" title="Cross-lingual hybrid search engine — LinkedIn post" loading="lazy"></iframe> -->
-<p>Built a search engine from scratch in C++ — inverted index, BM25 ranking, the actual math search engines use to decide relevance. Works across English, Chinese and Arabic, each with its own tokeniser.</p>
-<p>It's now hybrid: BM25 for exact keyword matches, dense embeddings for meaning, and the two rankings fused together. The dense side is what makes it cross-lingual — you can search every book with one query in any language, which BM25 alone can't do since it needs the query and the text to share words.</p>
-<p>Wanted to actually understand how "search" works under the hood instead of just using Elasticsearch and moving on.</p>
+<article class="project">
+  <h2><a href="https://github.com/JohnEsparagus/GPU-sparkles">GPU particle renderer</a></h2>
+  <ul class="tags"><li>WebGPU</li><li>Compute shaders</li></ul>
+  <p>Built a GPU-accelerated particle renderer, playing around with black hole / gravity-well style simulations. Millions of particles, real-time.</p>
+  <p>Mostly an excuse to get more comfortable with GPU compute and see how far I could push particle counts before it fell over.</p>
+  <p><a href="https://gpu-sparkles-nine.vercel.app/">Try the live demo</a> (needs Chrome with WebGPU enabled).</p>
+  <iframe class="post" src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7489405895295275008?collapsed=1" height="550" width="504" frameborder="0" allowfullscreen="" title="GPU particle renderer — LinkedIn post" loading="lazy"></iframe>
+</article>
 
-<h2><a href="https://github.com/JohnEsparagus/C-Shell">C Shell</a></h2>
-<iframe class="post" src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7489402901094776832?collapsed=1" height="550" width="504" frameborder="0" allowfullscreen="" title="C Shell — LinkedIn post" loading="lazy"></iframe>
-<p>Wrote a basic shell in C. Parsing commands, handling pipes, forking processes, all the stuff your terminal does without you thinking about it. It runs a claude code agent that helps create, delete, edit and run commands.</p>
-<p>Nothing revolutionary, but genuinely one of the best ways to actually understand how an OS talks to processes instead of just reading about it.</p>
+<article class="project">
+  <h2><a href="https://github.com/JohnEsparagus/CPU-RASTERIZER">CPU rasterizer</a></h2>
+  <ul class="tags"><li>C</li></ul>
+  <p>Wrote a 3D rasterizer from scratch in C — no GPU, just the CPU doing triangle projection, rasterization, depth testing, all of it by hand.</p>
+  <p>Slower than anything using a GPU obviously, but doing it without the GPU abstracting everything away taught me way more about how 3D rendering actually works.</p>
+  <iframe class="post" src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7489404443814387712?collapsed=1" height="550" width="504" frameborder="0" allowfullscreen="" title="CPU rasterizer — LinkedIn post" loading="lazy"></iframe>
+</article>
 
-<h2><a href="https://students.cs.ucl.ac.uk/2024/group14/index.html">NaviGo</a></h2>
-<!-- TODO linkedin post: <iframe class="post" src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:POST_ID?collapsed=1" height="550" width="504" frameborder="0" allowfullscreen="" title="NaviGo — LinkedIn post" loading="lazy"></iframe> -->
-<p>Over the past year, I've had the opportunity to work on NaviGo, a university research project focused on improving accessibility through geospatial data and interactive mapping.</p>
-<p>One of the most rewarding parts of the project was learning how a real software system comes together. We designed a full-stack application with a FastAPI backend, a reusable frontend widget, and a spatial database capable of storing and querying accessibility information efficiently. Working with concepts such as REST APIs, database design, spatial data modelling, and layered software architecture gave me experience that went far beyond coursework.</p>
-<p>What I'll remember most, though, is the team. Working alongside talented teammates challenged me to think differently, ask better questions, and appreciate the value of clean engineering practices and collaboration. Seeing how different people approached problems — from backend architecture to frontend design — was a huge learning experience.</p>
-<p>Looking back, I'm proud of what we built and grateful for everyone who contributed. It's exciting to see how much I've learned since the beginning of the project, and it has given me an even greater appreciation for building software that can have a real impact on people's lives.</p>
-<p>A big thank you to my teammates, our supervisors, and everyone who supported us throughout the project. I'm looking forward to applying these lessons to future projects and continuing to grow as a software engineer.</p>
+<article class="project">
+  <h2>Vulkan engine</h2>
+  <ul class="tags"><li>Vulkan</li></ul>
+  <p>Working through a Vulkan tutorial building a small game engine from the ground up. Vulkan gives you almost no hand-holding compared to something like OpenGL, which is exactly why I wanted to learn it.</p>
+  <p>Still early, but it's forcing me to actually understand GPU memory, pipelines, and synchronization instead of hiding behind an engine.</p>
+  <iframe class="post" src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7489403795106435072?collapsed=1" height="550" width="504" frameborder="0" allowfullscreen="" title="Vulkan engine — LinkedIn post" loading="lazy"></iframe>
+</article>
 
-<h2><a href="https://github.com/JohnEsparagus/GPU-sparkles">GPU particle renderer</a></h2>
-<iframe class="post" src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7489405895295275008?collapsed=1" height="550" width="504" frameborder="0" allowfullscreen="" title="GPU particle renderer — LinkedIn post" loading="lazy"></iframe>
-<p>Built a GPU-accelerated particle renderer, playing around with black hole / gravity-well style simulations. Millions of particles, real-time.</p>
-<p>Mostly an excuse to get more comfortable with GPU compute and see how far I could push particle counts before it fell over.</p>
+<article class="project">
+  <h2>Arabic learning app</h2>
+  <ul class="tags"><li>Flutter</li><li>Dart</li></ul>
+  <p>Built a small app to help decode and learn Arabic script — mostly for myself, honestly.</p>
+  <p>Sometimes the most useful projects aren't the impressive ones, just the ones that solve a problem you actually have.</p>
+</article>
+</main>
 
-<h2><a href="https://github.com/JohnEsparagus/CPU-RASTERIZER">CPU rasterizer</a></h2>
-<iframe class="post" src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7489404443814387712?collapsed=1" height="550" width="504" frameborder="0" allowfullscreen="" title="CPU rasterizer — LinkedIn post" loading="lazy"></iframe>
-<p>Wrote a 3D rasterizer from scratch in C — no GPU, just the CPU doing triangle projection, rasterization, depth testing, all of it by hand.</p>
-<p>Slower than anything using a GPU obviously, but doing it without the GPU abstracting everything away taught me way more about how 3D rendering actually works.</p>
-
-<h2>Vulkan engine</h2>
-<iframe class="post" src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7489403795106435072?collapsed=1" height="550" width="504" frameborder="0" allowfullscreen="" title="Vulkan engine — LinkedIn post" loading="lazy"></iframe>
-<p>Working through a Vulkan tutorial building a small game engine from the ground up. Vulkan gives you almost no hand-holding compared to something like OpenGL, which is exactly why I wanted to learn it.</p>
-<p>Still early, but it's forcing me to actually understand GPU memory, pipelines, and synchronization instead of hiding behind an engine.</p>
-
-<h2>Arabic learning app</h2>
-<!-- TODO linkedin post: <iframe class="post" src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:POST_ID?collapsed=1" height="550" width="504" frameborder="0" allowfullscreen="" title="Arabic learning app — LinkedIn post" loading="lazy"></iframe> -->
-<p>Built a small app to help decode and learn Arabic script — mostly for myself, honestly.</p>
-<p>Sometimes the most useful projects aren't the impressive ones, just the ones that solve a problem you actually have.</p>
-
-<hr>
-
-<p class="footer">
-<a href="mailto:Rasul_Amir@outlook.com">Rasul_Amir@outlook.com</a> &nbsp;·&nbsp; <a href="https://linkedin.com/in/yourprofile">linkedin</a>
-</p>
+<footer class="footer">
+  <a href="mailto:Rasul_Amir@outlook.com">Rasul_Amir@outlook.com</a>
+  <span>·</span>
+  <a href="https://github.com/JohnEsparagus">github</a>
+  <span>·</span>
+  <a href="https://www.linkedin.com/in/amir-rasul-493b10216">linkedin</a>
+</footer>
 
 </body>
 </html>

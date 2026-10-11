@@ -1,3 +1,8 @@
-title: Your Name
-description: projects
+title: Amir Rasul
+description: Search engines, graphics and systems projects built from scratch
 markdown: kramdown
+exclude:
+  - vendor
+  - Gemfile
+  - Gemfile.lock
+  - README.md
